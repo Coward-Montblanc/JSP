@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>과목 선택 - 강석현</title>
+	</head>
+	
+	<body>
+		<form name="formInput" method="get" action="Input" encType="UTF-8">
+			아이디 : <input type="text" name="user_id">
+			<!-- 사용자가 입력하는게 value임 -->
+			<br>
+			비밀번호 : <input type="password" name="user_pw">
+			<!-- 사용자가 입력하는게 value임 -->
+			<br>
+			<br>
+			<!-- name 다똑같게 -->
+			<input type="checkbox" name="subject" value="java" checked>자바
+			<!-- 미리 체크된거 -->
+			<input type="checkbox" name="subject" value="C언어">C언어
+			<input type="checkbox" name="subject" value="JSP">JSP
+			<input type="checkbox" name="subject" value="안드로이드">안드로이드
+			<br>
+			<br>
+			<input type="submit" value="전송">
+			<!-- submit = 전송 -->
+			<input type="reset" value="다시입력">
+		</form>
+	</body>
+</html>
