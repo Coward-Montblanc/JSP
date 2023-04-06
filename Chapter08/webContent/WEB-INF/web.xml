@@ -55,4 +55,10 @@
     <param-name>menu_goods</param-name>
     <param-value>상품조회 상품등록 상품수정 상품삭제</param-value>
   </context-param>
+  <servlet>
+    <description></description>
+    <display-name>LoadConfig</display-name>
+    <servlet-name>LoadConfig</servlet-name>
+    <servlet-class>sec04.ex02.LoadAppConfig</servlet-class>
+  </servlet>
 </web-app>
