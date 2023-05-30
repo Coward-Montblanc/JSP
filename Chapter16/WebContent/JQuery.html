@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			alert($("#jq1").html());
+		});
+		
+		function addHtml(){
+			$("#jq3").html('안녕하세요'+'<br>');
+		}
+		
+		function addImage(){
+			$(".jq1").html("<img src='image/duke.png'>");
+		}
+		
+		function fn_process(){
+			var value=$("#t_input").val();
+			$('#t_output').val(value);
+		}
+	</script>
+</head>
+<body>
+	<div>
+	안녕하세요
+	</div>
+	<div id="jq1">제이쿼리입니다!!</div>
+	<div id="jq2">
+		<p>제이쿼리는 아주 쉽습니다!!!</p>
+	</div>
+	
+	<hr>
+	
+	<div>
+		<p id="jq3"></p>
+	</div>
+	<input type="button" value="추가하기" onclick="addHtml()" />
+	
+	<hr>
+	
+	<div class="jq1"></div>
+	<div class="jq1"></div>
+	<input type="button" value="이미지 추가하기" onclick="addImage()" />
+	
+	<hr>
+	
+	<input type="text" id="t_input" />
+	<input type="button" value="입력하기" onClick="fn_process()" /><br><br>
+	
+	<div>
+		결과 : <br>
+		<input type="text" id="t_output" disabled/>
+	</div>
+</body>
+</html>
